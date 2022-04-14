@@ -9,11 +9,11 @@ def home(request):
         email=request.POST.get('email')
         message=request.POST.get('message')
         print(name,email,message)
-    send_mail(
-    'Hello',
-    f'Name: {name}\n\nEmail:{email}\n\nMessage:{message} this is the message.',
-    'techgeek337@gmail.com',
-    ['raymondagholor0@gmail.com'],
-    fail_silently=False,
-    )
+        send_mail(
+            'Hello',
+            f'Name: {name}\n\nEmail:{email}\n\nMessage:{message} this is the message.',
+            'techgeek337@gmail.com',
+            ['raymondagholor0@gmail.com'],
+            fail_silently=False,
+            )
     return render(request, 'index.html')
