@@ -1,0 +1,1 @@
+web: gunicorn RAYPORTFOLIO.wsgi --log-file -
