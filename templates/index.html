@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dickson</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <div class="first_section">
+        <div class="heading">
+            <h2>Dickson</h2>
+            <div class="nav">
+                <h4> <a href="https://www.google.com">ABOUT</a></h4>
+                <h4>WORK</h4>
+                <h4>SERVICES</h4>
+                <h4>EXPERIENCE</h4>
+                <h4>BRANDS</h4>
+                <h4> <a href="#second_section">CONTACT</a></h4>
+            </div>  
+        </div>
+        <h1>Python, Django <br> Backend Developer</h1>
+    </div>
+    <div id="second_section">
+        <p class="in_touch"> GET IN TOUCH</p>
+        <h3>Got a project you’d like to discuss? I’m all ears.</h3>
+        <form action="{% url 'home' %}" method="POST">
+            {% csrf_token %}
+            <input name="name" class="same_field" type="text" placeholder="Name">
+            <input name="email" class="same_field num2" type="email" placeholder="Email">
+            <br>
+            <textarea name="message" id="" cols="50" rows="10" placeholder="Message"></textarea>
+            <br>
+            <input class="submit" type="submit" value="SUBMIT">
+        </form>
+    </div>
+</body>
+</html>

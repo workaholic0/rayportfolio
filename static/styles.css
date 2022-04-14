@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+}
+
+/* FIRST SECTIONS STARTS HERE */
+.first_section{
+    background-image: url('https://brianwilkins.me/wp-content/uploads/2020/06/brian_duotone.png');
+    background-size: cover;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h2{
+    color: #ffffff;
+    font-size: 30px;
+    margin-top: 0;
+}
+.nav{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: baseline;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+h1{
+    width: 40%;
+    margin-left: 500px;
+    margin-top: 300px;
+    color: #ffffff;
+    font-size: 50px;
+}
+/* FIRST SECTION ENDS */
+
+/* SECOND SECTION BEGINS */
+#second_section{
+    padding: 100px 70px;
+    background-color:rgba(236,24,61,1);
+}
+
+.same_field, textarea{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(0,0,0,0.27);
+    padding: 8px;
+    border: 0;
+    outline:none;
+    color: #fff;
+}
+.num2{
+    margin-left: 25px;
+}
+.submit{
+    width: 400px;
+    padding: 13px;
+    border-radius: 20px;
+    border: 0;
+}
+::placeholder{
+    color: white;
+}
+h3{
+    color: #fff;
+    font-size: 30px;
+}
+.in_touch{
+    color:rgba(253,199,199,1);
+}
